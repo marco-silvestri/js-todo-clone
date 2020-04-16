@@ -40,6 +40,14 @@ i:active {
     color: #c5c6c7;
 }
 
+.stroked {
+    text-decoration: line-through;
+}
+
+.no-stroke {
+    text-decoration: none;
+}
+
 /* Wrappers */
 
 .add-task {

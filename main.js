@@ -18,6 +18,10 @@ $(document).ready(function () {
         $(this).parent().remove();
     });
 
+    $('#app').on('click', '.todo li', function(){
+        $(this).toggleClass('stroked');
+    });
+
     /****************
     *  Functions
     *****************/
