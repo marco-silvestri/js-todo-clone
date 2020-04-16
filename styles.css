@@ -1,0 +1,105 @@
+/* Reset */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Typography */
+
+body {
+    background-color: #0b0c10;
+    color: #66FCF1;
+    font-family: 'Dosis', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 56px;
+    padding-bottom: 20px;
+}
+
+.task-element {
+    color: #c5c6c7;
+}
+
+i {
+    color: #66FCF1;
+    font-size: 26px;
+    cursor: pointer;
+    opacity: .4;
+    transition: opacity .4s, color .1s;
+}
+
+i:hover {
+    opacity: 1;
+}
+
+i:active {
+    color: #c5c6c7;
+}
+
+/* Wrappers */
+
+.add-task {
+    color:#1f2833;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-task {
+    background-color: rgba(255, 255, 255, .4);
+    padding: 10px 10px;
+    margin-bottom: 30px;
+    width: 400px;
+    border: none;
+    transition: background-color .4s;
+}
+
+.add-task:focus,
+.add-task:hover {
+    background-color: rgba(102, 252, 241, 1);
+}
+
+.task-element {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    min-width: 500px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #45A29E;
+}
+
+.task-element:last-child {
+    border: none;
+}
+
+/* Footer styles */
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    background-color: #1f2833;
+}
+
+/* Templates collection */
+
+.todo-template {
+    display: none;
+}
