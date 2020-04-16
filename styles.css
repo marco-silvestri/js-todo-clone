@@ -111,3 +111,40 @@ footer {
 .todo-template {
     display: none;
 }
+
+.calendar {
+    position: relative;
+    margin: 100px;
+}
+
+.calendar span {
+    color: #c5c6c7;
+}
+
+.calendar i {
+    position: absolute;
+    font-size: 84px;
+    left: -200px;
+    top: -55px;
+}
+
+.calendar__day {
+    position: absolute;
+    left: -180px;
+    top: -35px;
+    font-size: 48px;
+}
+
+.calendar__name {
+    position: absolute;
+    left: -110px;
+    top: -35px;
+    font-size: 48px;
+}
+
+.calendar__month {
+    position: absolute;
+    left: 70px;
+    top: -35px;
+    font-size: 48px;
+}
