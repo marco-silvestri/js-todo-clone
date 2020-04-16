@@ -26,11 +26,17 @@ $(document).ready(function () {
     *  Functions
     *****************/
 
+    // Add a new non-empty element
     function addNewElement(){
-        var cloneTemplate = $('.ul-template li').clone();
-        cloneTemplate.prepend(inputArea.val().trim());
-        list.append(cloneTemplate);
-        inputArea.val('');
+        if (inputArea.val() == null || inputArea.val().trim() == '') {
+            alert('I cannot add an empty note')
+        }
+        else {
+            var cloneTemplate = $('.ul-template li').clone();
+            cloneTemplate.prepend(inputArea.val().trim());
+            list.append(cloneTemplate);
+            inputArea.val('');
+        }
     }
 
     /****************
