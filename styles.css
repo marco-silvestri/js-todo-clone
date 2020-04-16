@@ -20,7 +20,7 @@ h1 {
     padding-bottom: 20px;
 }
 
-.task-element {
+.todo li {
     color: #c5c6c7;
 }
 
@@ -72,7 +72,7 @@ i:active {
     background-color: rgba(102, 252, 241, 1);
 }
 
-.task-element {
+.todo li {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -83,7 +83,7 @@ i:active {
     border-bottom: 1px solid #45A29E;
 }
 
-.task-element:last-child {
+.todo li:last-child {
     border: none;
 }
 
